@@ -52,25 +52,24 @@ class MainHeader extends Component {
         let loginIcon = this.state.userName === '' ?
             <img onClick={this.updateShowLogin} className='aLink' style={{ "height": "20px" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQETV_iGZaujVjXGEEhzClQMErGjomXPTr7XfTj_qIltNDzqUwmAQ" alt="" />:
             <h1 onClick={this.updateShowLogin} className='aLink' style={{"height": "20px"}}>{this.state.userName}</h1>
-
+        let navStyle = {
+            "width":"800px",
+            "marginRight":"30px"
+        }
         return (
             <section>
                 <div className="mainHeaderWrapper">
-                    <Link to='/' style={{ "width": "230px" }} className='flexRow'>
-                        <img className='aLink' style={{ "height": "40px" }} src="https://cdn.rekkerd.org/wp-content/uploads/2017/03/Native-Instruments-logo.png" alt="" />
+                    <Link to='/' style={{ "width": "230px" }} className='flexRow aLink'>
+                        <h1 className='aLink GcpLogo' style={{ "height": "40px" }}>CP</h1>
                         {/*<ul style={headerName} >Native Instruments</ul>*/}
                     </Link>
-                    <div style={{ "width": "500px" }} className='flexRow'>
-                        <Link to='/products' className='navTextMedium'>PRODUCTS</Link>
-                        <Link to='/' className='navTextMedium'>BLOG</Link>
-                        <Link to='/' className='navTextMedium'>COMMUNITY</Link>
-                        <Link to='/' className='navTextMedium'>SUPPORT</Link>
+                    <div style={navStyle} className='flexRow'>
+                        <Link to='/products' className='GnavTextMedium'>PHOTOGRAPHY</Link>
+                        <Link to='/' className='GnavTextMedium'>VIDEOGRAPHY</Link>
+                        <Link to='/' className='GnavTextMedium'>AUDIO</Link>
+                        <Link to='/' className='GnavTextMedium'>WEBSITE DEVELOPMENT</Link>
+                        <Link to='/' className='GnavTextMedium'>CONTACT</Link>
                         {adminProtalLink}
-                    </div>
-                    <div style={{ "width": "150px" }} className='flexRow'>
-                        {loginIcon}
-                        <Link to='/cart'><img className='aLink' style={{ "height": "20px" }} src="https://d30y9cdsu7xlg0.cloudfront.net/png/5641-200.png" alt="" /></Link>
-                        <img className='aLink' style={{ "height": "20px" }} src="https://maxcdn.icons8.com/Share/icon/p1em/Very_Basic//search1600.png" alt="" />
                     </div>
                 </div>
             </section>

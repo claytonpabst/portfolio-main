@@ -19,18 +19,25 @@
     justify-content: space-around;
     align-items: center;
 }
+.GcpLogo{
+    font-size: 50px;
+}
 
-.navTextMedium{
+.GnavTextMedium{
     font-weight: bold;
-    transform: scaleX(.8);
+    transform: scaleX(.8) scaleY(1.2);
     height: 100%;
-    padding-top: 25px;
+    padding-top: 22px;
     text-decoration: none;
     color: black;
 }
-.navTextMedium:hover{
+.GnavTextMedium:hover{
     cursor: pointer;
     border-bottom: 5px solid grey;
+}
+.aLink{
+    text-decoration: none;
+    color: black;
 }
 .aLink:hover{
     cursor: pointer;
