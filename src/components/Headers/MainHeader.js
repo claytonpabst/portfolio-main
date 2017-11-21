@@ -53,13 +53,13 @@ class MainHeader extends Component {
             <img onClick={this.updateShowLogin} className='aLink' style={{ "height": "20px" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQETV_iGZaujVjXGEEhzClQMErGjomXPTr7XfTj_qIltNDzqUwmAQ" alt="" />:
             <h1 onClick={this.updateShowLogin} className='aLink' style={{"height": "20px"}}>{this.state.userName}</h1>
         let navStyle = {
-            "width":"800px",
+            "width":"700px",
             "marginRight":"30px"
         }
         return (
             <section>
                 <div className="mainHeaderWrapper">
-                    <Link to='/' style={{ "width": "230px" }} className='flexRow aLink'>
+                    <Link to='/' className='flexRow aLink'>
                         <h1 className='aLink GcpLogo' style={{ "height": "40px" }}>CP</h1>
                         {/*<ul style={headerName} >Native Instruments</ul>*/}
                     </Link>
@@ -68,7 +68,7 @@ class MainHeader extends Component {
                         <Link to='/' className='GnavTextMedium'>VIDEOGRAPHY</Link>
                         <Link to='/' className='GnavTextMedium'>AUDIO</Link>
                         <Link to='/' className='GnavTextMedium'>WEBSITE DEVELOPMENT</Link>
-                        <Link to='/' className='GnavTextMedium'>CONTACT</Link>
+                        <Link to='/' style={{"border":"3px solid black"}} className='contactButton'>CONTACT</Link>
                         {adminProtalLink}
                     </div>
                 </div>

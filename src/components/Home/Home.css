@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda:400,700|Spectral+SC:300,400,500,700,800');
 
 .home{
     width: 100%;
@@ -20,16 +21,23 @@
     align-items: center;
 }
 .GcpLogo{
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
     font-size: 50px;
+    margin-left: 30px;
+    text-shadow: 2px 2px #298bc4;
 }
 
 .GnavTextMedium{
     font-weight: bold;
-    transform: scaleX(.8) scaleY(1.2);
+    transform: scaleX(.8) scaleY(1.1);
     height: 100%;
     padding-top: 22px;
     text-decoration: none;
     color: black;
+    font-family: 'Spectral SC', serif;
+    font-weight: bolder;
+    transition: all .5s;
 }
 .GnavTextMedium:hover{
     cursor: pointer;

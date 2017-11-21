@@ -9,3 +9,15 @@
 .mainHeaderWrapper ul:hover{
     border-bottom: 5px solid grey;
 }
+.mainHeaderWrapper div{
+  font-family: 'Spectral SC', serif;
+}
+.contactButton{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: all .3s;
+}
+.contactButton:hover{
+  background: #99cfe8;
+}
